@@ -11,7 +11,7 @@ const supabase = createClient(`https://${process.env.SUPABASE_URL}.supabase.co/`
 
 
 const corsOptions = {
-    origin: "*",
+    origin: "http://localhost:3000",
     methods: "GET, POST, PUT, PATCH, DELETE, HEAD",
     credentials: true,
 }
