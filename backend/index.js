@@ -30,7 +30,7 @@ app.get("/", (req, res) => {
 //test
 app.post('/', async(req, res) => {
     console.log(req);
-    
+    console.log(process.env.SUPABASE_API_KEY)
   
     try {
         const { error } = await supabase
