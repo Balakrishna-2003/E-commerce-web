@@ -25,7 +25,7 @@ const port = 3001;
 app.get("/", (req, res) => {
     console.log(req);
     
-    res.send("server is running");
+    res.send("server is running successfully");
 })
 //test
 app.post('/', async(req, res) => {
