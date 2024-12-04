@@ -44,7 +44,7 @@ app.post('/', async(req, res) => {
             }else{
                 console.log(error);
                 //res.send(error.message).end();
-                res.send(process.env.SUPABASE_API_KEY);
+                res.send(proces.env.SUPABASE_URL+" "+process.env.SUPABASE_API_KEY);
             }  
         }else{
             console.log("Registration successful");
