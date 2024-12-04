@@ -43,7 +43,8 @@ app.post('/', async(req, res) => {
                 console.log("user already exists");  
             }else{
                 console.log(error);
-                res.send(error.message).end();
+                //res.send(error.message).end();
+                res.send(process.env.SUPABASE_API_KEY);
             }  
         }else{
             console.log("Registration successful");
